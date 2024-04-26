@@ -1,6 +1,7 @@
 "use client"
 import Image from "next/image"
-import varianceCover from "@/public/variances-cover.jpg"
+// import varianceCover from "@/public/variances-cover.jpg"
+import DaturhaLogo from "@/public/daturhaLogo2020.jpg"
 import useScreenDetect from "../hooks/screenDetect"
 import NavMenu from "../ui/menu/NavMenu"
 
@@ -9,15 +10,9 @@ export default function Header() {
 
   return (
     <header className="p-6">
-      <div className="flex flex-col gap-8 justify-center w-full">
+      <div className="flex gap-8 justify-between items-center w-full">
+        <Image src={DaturhaLogo} alt="Daturha logo" height={100} width={100} />
         <NavMenu />
-
-        <Image
-          src={varianceCover}
-          alt="variance-Logo"
-          width={500}
-          height={500}
-        />
       </div>
     </header>
   )
