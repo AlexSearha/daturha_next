@@ -1,19 +1,26 @@
 "use client"
 import Image from "next/image"
-// import varianceCover from "@/public/variances-cover.jpg"
 import DaturhaLogo from "@/public/daturhaLogo2020.jpg"
-import useScreenDetect from "../hooks/screenDetect"
 import NavMenu from "../ui/menu/NavMenu"
+import Link from "next/link"
+import { usePathname } from "next/navigation"
 
 export default function Header() {
-  const isMobileSize = useScreenDetect()
-
+  const pathname = usePathname()
   return (
-    <header className="p-6">
-      <div className="flex gap-8 justify-between items-center w-full">
-        <Image src={DaturhaLogo} alt="Daturha logo" height={100} width={100} />
+    <header className="flex justify-center p-6">
+      <div className="flex gap-8 justify-between items-center w-full md:max-w-7xl">
+        <Link href={pathname}>
+          <Image
+            src={DaturhaLogo}
+            alt="Daturha logo"
+            height={100}
+            width={100}
+          />
+        </Link>
         <NavMenu />
       </div>
+      <div></div>
     </header>
   )
 }

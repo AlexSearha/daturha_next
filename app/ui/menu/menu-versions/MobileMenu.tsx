@@ -20,11 +20,11 @@ export default function MobileMenu() {
           />
         </button>
       </div>
-      <div
+      <aside
         id="mobile-menu-modal"
         className={`absolute top-0 ${
           isOpen ? "right-0" : "-right-56"
-        } w-56 h-full bg-slate-500 z-10 border-l-2 border-black/10 transition-all ease-in-out duration-1000 delay-200`}
+        } w-56 h-full bg-text text-background z-10 border-l-2 border-black/10 transition-all ease-in-out duration-1000 delay-200`}
       >
         <div className="flex flex-col items-center justify-start h-full relative">
           <div
@@ -49,7 +49,7 @@ export default function MobileMenu() {
             </Link>
           </div>
         </div>
-      </div>
+      </aside>
     </>
   )
 }
