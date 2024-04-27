@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body
-        className={`${poppins.className} bg-background text-text overflow-x-hidden`}
+        className={`${poppins.className} bg-background text-text overflow-x-hidden flex flex-col min-h-screen`}
       >
         {children}
       </body>

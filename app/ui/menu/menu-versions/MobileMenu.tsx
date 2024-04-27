@@ -9,9 +9,10 @@ export default function MobileMenu() {
     console.log("close")
     setIsOpen(!isOpen)
   }
+
   return (
     <>
-      <div>
+      <div className="relative">
         <button onClick={handleClose} className="flex w-full justify-end p-2 ">
           <Bars3Icon
             className={`h-9 w-9 text-black  cursor-pointer hover:text-slate-400 transition-transform ease-in-out  duration-300 ${
@@ -22,11 +23,11 @@ export default function MobileMenu() {
       </div>
       <aside
         id="mobile-menu-modal"
-        className={`absolute top-0 ${
+        className={`fixed top-0 ${
           isOpen ? "right-0" : "-right-56"
-        } w-56 h-full bg-text text-background z-10 border-l-2 border-black/10 transition-all ease-in-out duration-1000 delay-200`}
+        } w-56 h-screen bg-text text-background z-10 border-l-2 border-black/10 transition-all ease-in-out duration-1000 delay-200`}
       >
-        <div className="flex flex-col items-center justify-start h-full relative">
+        <div className="flex flex-col items-center justify-start relative">
           <div
             onClick={handleClose}
             onBlur={handleClose}
