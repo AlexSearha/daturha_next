@@ -1,6 +1,7 @@
 "use client"
 import Image from "next/image"
-import DaturhaLogo from "@/public/daturhaLogo2020.jpg"
+import DaturhaLogo from "@/public/daturhaLogo2020.png"
+import DaturaTypo from "@/public/datlog01.png"
 import NavMenu from "../ui/menu/NavMenu"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
@@ -27,7 +28,7 @@ export default function Header() {
         id="logo"
         className="flex flex-col w-full items-center justify-evenly md:flex-row-reverse"
       >
-        <Image src={DaturhaLogo} alt="Daturha logo" height={500} width={500} />
+        <Image src={DaturaTypo} alt="Daturha logo" height={700} width={700} />
         <div id="header-title" className="flex flex-col">
           <h1>Daturha</h1>
           <p>Lorem ipsum dolor sit amet.</p>

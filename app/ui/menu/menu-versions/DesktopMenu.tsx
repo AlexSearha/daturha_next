@@ -10,13 +10,13 @@ export default function DesktopMenu() {
           </Link>
         </li>
         <li>
-          <Link href="#band" className="transition hover:text-slate-400">
-            BAND
+          <Link href="#tour" className="transition hover:text-slate-400">
+            TOUR
           </Link>
         </li>
         <li>
-          <Link href="#tour" className="transition hover:text-slate-400">
-            TOUR
+          <Link href="#band" className="transition hover:text-slate-400">
+            BAND
           </Link>
         </li>
         <li>

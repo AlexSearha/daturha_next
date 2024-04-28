@@ -82,3 +82,33 @@ export function IconYoutube() {
     </Link>
   )
 }
+
+export function BandcampIcon() {
+  const [isHovered, setIsHovered] = useState(false)
+  return (
+    <Link
+      href="https://www.bandcamp.com"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      className="h-auto w-auto p-2 shadow-lg rounded-full transition-colors bg-white hover:bg-[#3c9aaa]"
+    >
+      <span>
+        <svg
+          id="Capa_1"
+          fill="currentColor"
+          viewBox="0 0 97.75 97.75"
+          className={`h-6 w-6 transition-colors ${
+            isHovered ? "text-white" : "text-black"
+          }`}
+        >
+          <g>
+            <path
+              d="M48.875,0C21.882,0,0,21.882,0,48.875S21.882,97.75,48.875,97.75S97.75,75.868,97.75,48.875S75.868,0,48.875,0z
+		 M64.835,70.857H12.593l20.32-43.965h52.244L64.835,70.857z"
+            />
+          </g>
+        </svg>
+      </span>
+    </Link>
+  )
+}

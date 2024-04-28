@@ -70,21 +70,12 @@ const dateFormat = (dateToConvert: string) => {
 
 export const datesTour = [
   {
-    image: "",
-    placeName: "Le Zenith",
-    place: "13 rue de la bite",
-    city: "Paris",
-    zipcode: "75001",
-    date: dateFormat("2024-07-25"),
-    ticketWebsite: "",
-  },
-  {
-    image: "",
-    placeName: "Le Trabendo",
-    place: "22 rue du cul",
-    city: "Nantes",
-    zipcode: "44000",
-    date: dateFormat("2024-06-04"),
-    ticketWebsite: "",
+    placeName: "Menecy Metal Fest",
+    address: "7 Av. de Villeroy",
+    city: "Mennecy",
+    zipcode: "91540",
+    date: dateFormat("2024-09-07"),
+    ticketWebsite:
+      "https://www.fnactickets.com/ticket-evenement/mennecy-metal-fest-fst24mmf-lt.htm",
   },
 ]

@@ -1,7 +1,9 @@
 import Footer from "./Footer"
 import Header from "./components/Header"
-import MusicSection from "./ui/MusicSection"
+import BandSection from "./ui/BandSection"
+import ContactSection from "./ui/ContacSection"
 import ReleaseSection from "./ui/ReleaseSection"
+import TourSection from "./ui/TourSection"
 
 export default function Home() {
   return (
@@ -9,7 +11,9 @@ export default function Home() {
       <Header />
       <main className="flex flex-col grow items-center justify-between overflow-auto px-4">
         <ReleaseSection />
-        <MusicSection />
+        <TourSection />
+        {/* <BandSection /> */}
+        <ContactSection />
       </main>
       <Footer />
     </>

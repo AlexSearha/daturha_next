@@ -17,7 +17,7 @@ const config: Config = {
         sans: ["var(--font-poppins)"],
       },
       colors: {
-        background: "#FAFCF1",
+        background: "#fefee2",
         text: "#191410",
         textSecondary: "#D4964F",
         textHover: "#672013",

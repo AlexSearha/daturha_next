@@ -3,7 +3,7 @@ import DesktopMenu from "./menu-versions/DesktopMenu"
 import MobileMenu from "./menu-versions/MobileMenu"
 
 export default function NavMenu() {
-  const isDesktopSize = useScreenDetect()
+  const isMobileSize = useScreenDetect()
 
-  return <>{isDesktopSize ? <MobileMenu /> : <DesktopMenu />}</>
+  return <>{isMobileSize ? <MobileMenu /> : <DesktopMenu />}</>
 }
