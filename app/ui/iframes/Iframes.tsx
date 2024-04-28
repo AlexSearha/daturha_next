@@ -59,3 +59,20 @@ export function BeyondTheReasonIframe() {
     </iframe>
   )
 }
+
+export function UnearthVideoIframe() {
+  const isMobileView = useScreenDetect()
+
+  return (
+    <iframe
+      width={isMobileView ? "385" : "560"}
+      height={isMobileView ? "216" : "315"}
+      src="https://www.youtube.com/embed/uATRu9o3lwc?si=RooLwp5Cp_5AszZz"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+  )
+}

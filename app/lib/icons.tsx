@@ -1,14 +1,19 @@
-"use client"
 import Link from "next/link"
 import { useState } from "react"
 
-export function IconFacebook() {
+export function IconFacebook({ iconSize }: { iconSize: number }) {
   const [isHovered, setIsHovered] = useState(false)
+
+  const iconStyle = {
+    height: `${iconSize}px`,
+    width: `${iconSize}px`,
+  }
 
   return (
     <>
       <Link
         href="https://www.facebook.com/Daturha"
+        target="_blank"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         className="h-auto w-auto p-2 shadow-lg rounded-full transition-colors bg-white hover:bg-[#4267B2]"
@@ -18,7 +23,8 @@ export function IconFacebook() {
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
             viewBox="0 0 320 512"
-            className={`h-6 w-6 transition-colors ${
+            style={iconStyle}
+            className={`transition-colors ${
               isHovered ? "text-white" : "text-black"
             }`}
           >
@@ -33,11 +39,18 @@ export function IconFacebook() {
   )
 }
 
-export function IconInstagram() {
+export function IconInstagram({ iconSize }: { iconSize: number }) {
   const [isHovered, setIsHovered] = useState(false)
+
+  const iconStyle = {
+    height: `${iconSize}px`,
+    width: `${iconSize}px`,
+  }
+
   return (
     <Link
-      href="https://www.instagram.com"
+      href="https://www.instagram.com/daturha_band"
+      target="_blank"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       className="h-auto w-auto p-2 shadow-lg rounded-full transition-colors bg-white hover:bg-gradient-to-t hover:from-[#ffdc80] hover:to-[#833ab4]"
@@ -47,7 +60,8 @@ export function IconInstagram() {
           xmlns="http://www.w3.org/2000/svg"
           fill="currentColor"
           viewBox="0 0 448 512"
-          className={`h-6 w-6 transition-colors ${
+          style={iconStyle}
+          className={`transition-colors ${
             isHovered ? "text-white" : "text-black"
           }`}
         >
@@ -58,11 +72,18 @@ export function IconInstagram() {
   )
 }
 
-export function IconYoutube() {
+export function IconYoutube({ iconSize }: { iconSize: number }) {
   const [isHovered, setIsHovered] = useState(false)
+
+  const iconStyle = {
+    height: `${iconSize}px`,
+    width: `${iconSize}px`,
+  }
+
   return (
     <Link
-      href="https://www.youtube.com"
+      href="https://www.youtube.com/user/DATURHA"
+      target="_blank"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       className="h-auto w-auto p-2 shadow-lg rounded-full transition-colors bg-white hover:bg-[#FF0000]"
@@ -72,7 +93,8 @@ export function IconYoutube() {
           xmlns="http://www.w3.org/2000/svg"
           fill="currentColor"
           viewBox="0 0 576 512"
-          className={`h-6 w-6 transition-colors ${
+          style={iconStyle}
+          className={`transition-colors ${
             isHovered ? "text-white" : "text-black"
           }`}
         >
@@ -83,11 +105,18 @@ export function IconYoutube() {
   )
 }
 
-export function BandcampIcon() {
+export function BandcampIcon({ iconSize }: { iconSize: number }) {
   const [isHovered, setIsHovered] = useState(false)
+
+  const iconStyle = {
+    height: `${iconSize}px`,
+    width: `${iconSize}px`,
+  }
+
   return (
     <Link
-      href="https://www.bandcamp.com"
+      href="https://daturha.bandcamp.com"
+      target="_target"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       className="h-auto w-auto p-2 shadow-lg rounded-full transition-colors bg-white hover:bg-[#3c9aaa]"
@@ -97,7 +126,8 @@ export function BandcampIcon() {
           id="Capa_1"
           fill="currentColor"
           viewBox="0 0 97.75 97.75"
-          className={`h-6 w-6 transition-colors ${
+          style={iconStyle}
+          className={`h-${iconSize} w-${iconSize} transition-colors ${
             isHovered ? "text-white" : "text-black"
           }`}
         >

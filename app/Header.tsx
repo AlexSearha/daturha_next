@@ -2,9 +2,10 @@
 import Image from "next/image"
 import DaturhaLogo from "@/public/daturhaLogo2020.png"
 import DaturaTypo from "@/public/datlog01.png"
-import NavMenu from "../ui/menu/NavMenu"
+import NavMenu from "./ui/menu/NavMenu"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import { poppins } from "./lib/font"
 
 export default function Header() {
   const pathname = usePathname()
@@ -30,8 +31,10 @@ export default function Header() {
       >
         <Image src={DaturaTypo} alt="Daturha logo" height={700} width={700} />
         <div id="header-title" className="flex flex-col">
-          <h1>Daturha</h1>
-          <p>Lorem ipsum dolor sit amet.</p>
+          {/* <h1 className={`${poppins.className} text-5xl`}>Daturha</h1> */}
+          <p className={`${poppins.className} text-3xl`}>
+            Death Melodic Metal Band
+          </p>
         </div>
       </div>
     </header>

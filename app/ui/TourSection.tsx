@@ -10,11 +10,13 @@ const showDatesTour = () => {
         className="flex w-full justify-between items-center gap-2 my-3 border-b-2 border-black/20 py-4 md:w-3/4"
       >
         <div>
-          <h2>{liveEvent.date}</h2>
-          <p>{liveEvent.placeName}</p>
-          <p>{`${liveEvent.address} ${liveEvent.city} ${liveEvent.zipcode}`}</p>
+          <h2 className="text-2xl font-bold text-slate-600">
+            {liveEvent.placeName}
+          </h2>
+          <p className="uppercase">{liveEvent.date}</p>
+          <p className="italic">{`${liveEvent.address} ${liveEvent.city} ${liveEvent.zipcode}`}</p>
         </div>
-        <button className="flex justify-center items-center h-10 w-auto bg-slate-800 text-white shadow-md transition-colors p-4 hover:bg-slate-950 ">
+        <button className="flex justify-center items-center h-10 shadow-lg w-auto border-2 border-black transition-colors p-4 hover:bg-black hover:text-white ">
           <Link
             href={liveEvent.ticketWebsite}
             className="font-bold"
@@ -30,7 +32,7 @@ const showDatesTour = () => {
 
 export default function TourSection() {
   return (
-    <section id="tour" className="w-full flex flex-col items-center">
+    <section id="tour" className="w-full flex flex-col items-center px-4">
       <h2 className="text-4xl font-bold text-center mt-10 mb-8">TOUR DATES</h2>
       {showDatesTour().length !== 0 ? (
         showDatesTour()

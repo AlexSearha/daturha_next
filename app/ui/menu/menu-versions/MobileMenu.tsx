@@ -1,6 +1,7 @@
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/20/solid"
 import Link from "next/link"
 import { useState } from "react"
+import SocialsBar from "../../SocialsBar"
 
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false)
@@ -35,19 +36,38 @@ export default function MobileMenu() {
           >
             <XMarkIcon className="h-9 w-9 text-white transition cursor-pointer hover:text-slate-400" />
           </div>
-          <div className="flex flex-col items-center gap-4 mt-12">
-            <Link onClick={handleClose} href="#">
+          <div className="flex flex-col items-center gap-4 mt-12 mb-8">
+            <Link
+              onClick={handleClose}
+              href="#music"
+              className="transition hover:text-gray-400"
+            >
               MUSIC
             </Link>
-            <Link onClick={handleClose} href="#">
+            <Link
+              onClick={handleClose}
+              href="#tour"
+              className="transition hover:text-gray-400"
+            >
               TOUR
             </Link>
-            <Link onClick={handleClose} href="#">
+            <Link
+              onClick={handleClose}
+              href="#band"
+              className="transition hover:text-gray-400"
+            >
               BAND
             </Link>
-            <Link onClick={handleClose} href="#">
+            <Link
+              onClick={handleClose}
+              href="#contact"
+              className="transition hover:text-gray-400"
+            >
               CONTACT
             </Link>
+          </div>
+          <div className="flex gap-2">
+            <SocialsBar width="normal" />
           </div>
         </div>
       </aside>

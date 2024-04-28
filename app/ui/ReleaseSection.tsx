@@ -25,8 +25,8 @@ const BeyondTheReasonComponent = dynamic(
 
 export default function ReleaseSection() {
   return (
-    <section id="releases" className="flex flex-col">
-      <h2 className="text-4xl font-bold text-center my-10">LAST RELEASES</h2>
+    <section id="music" className="flex flex-col px-4">
+      <h2 className="text-4xl font-bold text-center">RELEASES</h2>
       <div className="flex flex-col gap-4 md:flex-row md:gap-8">
         <div className="flex flex-col gap-2">
           <VarianceIframeComponent />
