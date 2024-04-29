@@ -32,8 +32,8 @@ const showDatesTour = () => {
 
 export default function TourSection() {
   return (
-    <section id="tour" className="w-full flex flex-col items-center px-4">
-      <h2 className="text-4xl font-bold text-center mt-10 mb-8">TOUR DATES</h2>
+    <section id="tour" className="w-full flex flex-col items-center px-4 py-6">
+      <h2 className="text-4xl font-bold text-center mb-8">TOUR DATES</h2>
       {showDatesTour().length !== 0 ? (
         showDatesTour()
       ) : (

@@ -3,7 +3,7 @@ import Link from "next/link"
 export default function DesktopMenu() {
   return (
     <nav>
-      <ul className="text-slate-900 flex gap-2">
+      <ul className="text-slate-900 text-lg flex gap-2">
         <li>
           <Link href="#music" className="transition hover:text-slate-400">
             MUSIC
