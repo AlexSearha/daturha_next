@@ -30,15 +30,21 @@ export default function ReleaseSection() {
       <div className="flex flex-col gap-4 md:flex-row md:gap-8">
         <div className="flex flex-col gap-2">
           <VarianceIframeComponent />
-          <p className="text-center">Variances</p>
+          <button className="text-center p-2 font-bold border-2 transition-colors border-black hover:text-white hover:bg-text">
+            GET &quot;VARIANCES&quot; NOW
+          </button>
         </div>
         <div className="flex flex-col gap-2">
           <CycleIframeComponent />
-          <p className="text-center">Cycle</p>
+          <button className="text-center p-2 font-bold border-2 transition-colors border-black hover:text-white hover:bg-text">
+            GET &quot;CYCLE&quot; NOW
+          </button>
         </div>
         <div className="flex flex-col gap-2">
           <BeyondTheReasonComponent />
-          <p className="text-center">Beyond The Reason</p>
+          <button className="text-center p-2 font-bold border-2 transition-colors border-black hover:text-white hover:bg-text">
+            GET &quot;BEYOND THE REASON&quot; NOW
+          </button>
         </div>
       </div>
     </section>

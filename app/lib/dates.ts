@@ -78,4 +78,31 @@ export const datesTour = [
     ticketWebsite:
       "https://www.fnactickets.com/ticket-evenement/mennecy-metal-fest-fst24mmf-lt.htm",
   },
+  {
+    placeName: "Le Zenith",
+    address: "7 Av. de Villeroy",
+    city: "Paris",
+    zipcode: "75002",
+    date: dateFormat("2024-10-02"),
+    ticketWebsite:
+      "https://www.fnactickets.com/ticket-evenement/mennecy-metal-fest-fst24mmf-lt.htm",
+  },
+  {
+    placeName: "HellFest Open Air",
+    address: "7 Av. du parc",
+    city: "Clisson",
+    zipcode: "44125",
+    date: dateFormat("2024-06-22"),
+    ticketWebsite:
+      "https://www.fnactickets.com/ticket-evenement/mennecy-metal-fest-fst24mmf-lt.htm",
+  },
+  {
+    placeName: "Le Trabendo",
+    address: "15 rue du generale DeGaule",
+    city: "Paris",
+    zipcode: "75011",
+    date: dateFormat("2024-09-07"),
+    ticketWebsite:
+      "https://www.fnactickets.com/ticket-evenement/mennecy-metal-fest-fst24mmf-lt.htm",
+  },
 ]

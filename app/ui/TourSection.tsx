@@ -7,16 +7,18 @@ const showDatesTour = () => {
     return (
       <div
         key={key}
-        className="flex w-full justify-between items-center gap-2 my-3 border-b-2 border-black/20 py-4 md:w-3/4"
+        className={`flex w-full justify-between items-center gap-2 py-4 px-2 md:w-3/4 ${
+          key % 2 === 0 ? "bg-gray-200" : ""
+        }`}
       >
         <div>
           <h2 className="text-2xl font-bold text-slate-600">
             {liveEvent.placeName}
           </h2>
           <p className="uppercase">{liveEvent.date}</p>
-          <p className="italic">{`${liveEvent.address} ${liveEvent.city} ${liveEvent.zipcode}`}</p>
+          <p className="italic">{`${liveEvent.address}, ${liveEvent.zipcode} ${liveEvent.city}`}</p>
         </div>
-        <button className="flex justify-center items-center h-10 shadow-lg w-auto border-2 border-black transition-colors p-4 hover:bg-black hover:text-white ">
+        <button className="flex justify-center items-center h-12 shadow-lg w-auto border-2 border-black transition-colors p-4 hover:bg-black hover:text-white ">
           <Link
             href={liveEvent.ticketWebsite}
             className="font-bold"

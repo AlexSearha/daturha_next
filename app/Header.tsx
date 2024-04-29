@@ -39,7 +39,9 @@ export default function Header() {
           <h1 className="text-5xl font-bold tracking-tight">
             Death Melodic Metal
           </h1>
-          <p className="text-3xl tracking-tight">Lorem ipsum dolor sit amet.</p>
+          <p className="text-3xl tracking-tight">
+            Pour ceux qui aiment la bite
+          </p>
         </div>
       </div>
     </header>
