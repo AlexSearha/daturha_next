@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        texturesPapyrus: "url('/asfalt-light.png')",
+      },
       fontFamily: {
         sans: ["var(--font-poppins)"],
       },
