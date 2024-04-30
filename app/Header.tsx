@@ -17,6 +17,7 @@ export default function Header() {
         <Link href={pathname}>
           <Image
             src={DaturhaLogo}
+            className="animate-spin-slow"
             alt="Daturha logo"
             height={100}
             width={100}

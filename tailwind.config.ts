@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      animation: {
+        "spin-slow": "spin 10s linear infinite",
+      },
       backgroundImage: {
         texturesPapyrus: "url('/asfalt-light.png')",
       },
