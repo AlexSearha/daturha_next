@@ -26,21 +26,24 @@ export default function Header() {
       </div>
       <div
         id="logo"
-        className="flex flex-col w-full items-center justify-evenly gap-5 md:flex-row-reverse"
+        className="flex flex-col w-full items-center justify-evenly gap-5 md:flex-row-reverse md:max-w-6xl"
       >
         <Image
           src={DaturaTypo}
-          className="drop-shadow-lg"
+          className="drop-shadow-lg md:w-3/5"
           alt="Daturha logo"
           height={700}
           width={700}
         />
-        <div id="header-title" className="flex flex-col items-end">
+        <div
+          id="header-title"
+          className="flex flex-col items-start md:w-2/5 md:items-end"
+        >
           <h1 className="text-5xl font-bold tracking-tight">
             Death Melodic Metal
           </h1>
           <p className="text-3xl tracking-tight">
-            Pour ceux qui aiment la bite
+            Pour les hommes qui aiment les hommes
           </p>
         </div>
       </div>

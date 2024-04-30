@@ -1,5 +1,6 @@
 import React from "react"
 import dynamic from "next/dynamic"
+import Link from "next/link"
 
 const VarianceIframeComponent = dynamic(
   () => import("../ui/iframes/Iframes").then((mod) => mod.VariancesIframe),
@@ -30,21 +31,33 @@ export default function ReleaseSection() {
       <div className="flex flex-col gap-4 md:flex-row md:gap-8">
         <div className="flex flex-col gap-2">
           <VarianceIframeComponent />
-          <button className="text-center p-2 font-bold border-2 transition-colors border-black hover:text-white hover:bg-text">
+          <Link
+            href="https://daturha.bandcamp.com/album/variances-part-i"
+            target="_blank"
+            className="text-center p-2 font-bold border-2 transition-colors border-black hover:text-white hover:bg-text"
+          >
             GET &quot;VARIANCES&quot; NOW
-          </button>
+          </Link>
         </div>
         <div className="flex flex-col gap-2">
           <CycleIframeComponent />
-          <button className="text-center p-2 font-bold border-2 transition-colors border-black hover:text-white hover:bg-text">
+          <Link
+            href="https://shop.season-of-mist.com/daturha-cycle-cd-digipak"
+            target="_blank"
+            className="text-center p-2 font-bold border-2 transition-colors border-black hover:text-white hover:bg-text"
+          >
             GET &quot;CYCLE&quot; NOW
-          </button>
+          </Link>
         </div>
         <div className="flex flex-col gap-2">
           <BeyondTheReasonComponent />
-          <button className="text-center p-2 font-bold border-2 transition-colors border-black hover:text-white hover:bg-text">
+          <Link
+            href="https://daturha.bandcamp.com/album/beyond-the-reason"
+            target="_blank"
+            className="text-center p-2 font-bold border-2 transition-colors border-black hover:text-white hover:bg-text"
+          >
             GET &quot;BEYOND THE REASON&quot; NOW
-          </button>
+          </Link>
         </div>
       </div>
     </section>
