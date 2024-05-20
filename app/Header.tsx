@@ -5,11 +5,12 @@ import DaturaTypo from "@/public/datlog01.png"
 import NavMenu from "./ui/menu/NavMenu"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import MennecyVariance from "./ui/MennecyVariance"
 
 export default function Header() {
   const pathname = usePathname()
   return (
-    <header className="flex flex-col justify-center items-center p-6">
+    <header className="flex flex-col justify-center items-center py-6">
       <div
         id="navbar-menu"
         className="flex gap-8 justify-between items-center w-full md:max-w-7xl"
@@ -17,7 +18,6 @@ export default function Header() {
         <Link href={pathname}>
           <Image
             src={DaturhaLogo}
-            className="animate-spin-slow"
             alt="Daturha logo"
             height={100}
             width={100}
@@ -27,7 +27,7 @@ export default function Header() {
       </div>
       <div
         id="logo"
-        className="flex flex-col w-full items-center justify-evenly gap-5 md:flex-row-reverse md:max-w-6xl"
+        className="flex flex-col w-full items-center justify-evenly mb-6 gap-5 md:flex-row-reverse md:max-w-6xl"
       >
         <Image
           src={DaturaTypo}
@@ -48,6 +48,7 @@ export default function Header() {
           </p>
         </div>
       </div>
+      <MennecyVariance />
     </header>
   )
 }

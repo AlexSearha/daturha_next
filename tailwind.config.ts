@@ -9,10 +9,12 @@ const config: Config = {
   theme: {
     extend: {
       animation: {
-        "spin-slow": "spin 10s linear infinite",
+        "spin-slow": "spin 5s linear infinite",
       },
       backgroundImage: {
         texturesPapyrus: "url('/asfalt-light.png')",
+        mennecyCover: "url('/mennecyCover.webp')",
+        varianceCover: "url('/variances-cover.jpg')",
       },
       fontFamily: {
         sans: ["var(--font-poppins)"],
@@ -22,6 +24,12 @@ const config: Config = {
         text: "#191410",
         textSecondary: "#D4964F",
         textHover: "#672013",
+      },
+      gradientColorStops: {
+        startVariancesColor: "#f4b45e",
+        endVariancesColor: "#e35150",
+        startMennecyColor: "#1caaec",
+        endMennecyColor: "#ffe0a7",
       },
     },
   },

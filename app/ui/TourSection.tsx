@@ -2,7 +2,7 @@ import React from "react"
 import { datesTour } from "../lib/dates"
 import Link from "next/link"
 
-const showDatesTour = () => {
+const ShowDatesTour = () => {
   return datesTour.map((liveEvent, key) => {
     return (
       <div
@@ -39,8 +39,8 @@ export default function TourSection() {
       className="w-full flex flex-col items-center px-4 py-6 md:max-w-5xl"
     >
       <h2 className="text-4xl font-bold text-center mb-8">TOUR DATES</h2>
-      {showDatesTour().length !== 0 ? (
-        showDatesTour()
+      {ShowDatesTour().length !== 0 ? (
+        <ShowDatesTour />
       ) : (
         <p>No events for the moment !</p>
       )}
