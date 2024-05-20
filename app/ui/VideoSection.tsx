@@ -1,7 +1,5 @@
 import dynamic from "next/dynamic"
-import Image from "next/image"
 import React from "react"
-import DaturhaFlower from "@/public/daturhaLogo2020.png"
 
 const UnearthVideoYoutube = dynamic(
   () => import("../ui/iframes/Iframes").then((mod) => mod.UnearthVideoIframe),
@@ -20,7 +18,9 @@ export default function VideoSection() {
         <div className="absolute w-full h-full top-0 left-0 bg-texturesPapyrus bg-repeat"></div>
         <div className="relative w-full z-10 flex flex-col items-center gap-4 md:flex-row md:justify-evenly ">
           <div className="text-white flex flex-col items-start gap-1">
-            <h2 className="text-5xl font-bold text-center">Last Video</h2>
+            <h2 className="text-5xl font-bold text-center md:text-7xl">
+              Last Video
+            </h2>
             <p className="text-2xl italic">Unearth - Cycle</p>
           </div>
           <UnearthVideoYoutube />
