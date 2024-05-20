@@ -26,7 +26,7 @@ const BeyondTheReasonComponent = dynamic(
 
 export default function ReleaseSection() {
   return (
-    <section id="releases">
+    <section id="music">
       {/** bandcamp Players */}
       <div id="bandcamp-player" className="flex flex-col gap-10 px-4 py-16">
         <h2 className="text-4xl font-bold text-center">RELEASES</h2>

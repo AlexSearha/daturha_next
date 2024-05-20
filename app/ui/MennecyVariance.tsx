@@ -15,7 +15,7 @@ export default function MennecyVariance() {
       <div className="relative w-full">
         <div>
           <div className="relative flex flex-col-reverse gap-10 w-full items-center justify-around xl:flex-row">
-            <div className="w-auto h-[350px] -translate-x-[23%] shadow-lg shadow-black flex xl:translate-x-0 xl:h-[450px]">
+            <div className="w-auto h-[230px] -translate-x-[23%] shadow-lg shadow-black flex xl:translate-x-0 xl:h-[450px]">
               <Image
                 src={VarianceCover}
                 layout="fill"
@@ -23,7 +23,7 @@ export default function MennecyVariance() {
                 alt="variance cover"
                 className="z-20"
               />
-              <div className="w-[350px] h-[350px] translate-x-[50%] z-10 xl:w-[450px] xl:h-[450px]">
+              <div className="w-[230px] h-[230px] translate-x-[50%] z-10 xl:w-[450px] xl:h-[450px]">
                 <Image
                   src={VinylImage}
                   layout="fill"
@@ -31,13 +31,13 @@ export default function MennecyVariance() {
                   alt="variance cover"
                   className="animate-spin-slow z-10"
                 />
-                <div className="absolute z-0 top-[100px] left-[100px] w-[150px] h-[150px] bg-black xl:top-[125px] xl:left-[150px] xl:w-[200px] xl:h-[200px]"></div>
+                <div className="absolute z-0 top-[70px] left-[70px] w-[100px] h-[100px] bg-black xl:top-[125px] xl:left-[150px] xl:w-[200px] xl:h-[200px]"></div>
               </div>
             </div>
             <div className="text-center">
               <h2 className="font-bold text-5xl">
                 GET PHYSICAL <br />
-                <span className="text-[6rem] bg-gradient-to-r from-startVariancesColor to-endVariancesColor inline-block text-transparent bg-clip-text">
+                <span className="text-[4.5rem] bg-gradient-to-r from-startVariancesColor to-endVariancesColor inline-block text-transparent bg-clip-text">
                   VARIANCES
                 </span>
                 <br />
