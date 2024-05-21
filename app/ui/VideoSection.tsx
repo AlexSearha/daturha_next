@@ -13,7 +13,7 @@ export default function VideoSection() {
     <>
       <section
         id="videos"
-        className="bg-text w-full p-8 md:py-16 flex flex-col gap-4 justify-evenly items-center relative  md:flex-row md:gap-0"
+        className="bg-text w-full p-8 md:py-16 flex flex-col gap-4 justify-evenly items-center relative  md:flex-row md:gap-0 overflow-x-hidden"
       >
         <div className="absolute w-full h-full top-0 left-0 bg-texturesPapyrus bg-repeat"></div>
         <div className="relative w-full z-10 flex flex-col items-center gap-4 md:flex-row md:justify-evenly ">
