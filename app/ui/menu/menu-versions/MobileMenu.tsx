@@ -26,7 +26,7 @@ export default function MobileMenu() {
         id="mobile-menu-modal"
         className={`fixed top-0 ${
           isOpen ? "right-0" : "-right-56"
-        } w-56 h-screen bg-text text-background z-10 border-l-2 border-black/10 transition-all ease-in-out duration-1000 delay-200`}
+        } w-56 h-screen z-50 bg-text text-background border-l-2 border-black/10 transition-all ease-in-out duration-1000 delay-200`}
       >
         <div className="flex flex-col items-center justify-start relative">
           <div
