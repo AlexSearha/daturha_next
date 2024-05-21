@@ -1,27 +1,39 @@
 "use client"
-import Image from "next/image"
 import DaturhaLogo from "@/public/daturhaLogo2020.png"
 import DaturaTypo from "@/public/datlog01.png"
 import NavMenu from "./ui/menu/NavMenu"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import MennecyVariance from "./ui/MennecyVariance"
+import Image from "next/image"
+import useScreenDetect from "./hooks/screenDetect"
 
 export default function Header() {
   const pathname = usePathname()
+  const isMobileSize = useScreenDetect()
+
   return (
-    <header className="flex flex-col justify-center items-center py-6">
+    <header className="flex flex-col justify-center items-center pt-6">
       <div
         id="navbar-menu"
-        className="flex gap-8 justify-between items-center w-full md:max-w-7xl"
+        className="flex px-4 gap-8 justify-between items-center w-full md:max-w-7xl"
       >
         <Link href={pathname}>
-          <Image
-            src={DaturhaLogo}
-            alt="Daturha logo"
-            height={100}
-            width={100}
-          />
+          {isMobileSize ? (
+            <Image
+              src={DaturhaLogo}
+              alt="Daturha logo"
+              height={70}
+              width={70}
+            />
+          ) : (
+            <Image
+              src={DaturhaLogo}
+              alt="Daturha logo"
+              height={100}
+              width={100}
+            />
+          )}
         </Link>
         <NavMenu />
       </div>

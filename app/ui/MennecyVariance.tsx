@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from "next/legacy/image"
 import React from "react"
 // img
 import VinylImage from "@/public/vinyl.png"
@@ -9,7 +9,7 @@ export default function MennecyVariance() {
   return (
     <div
       id="variance-promo"
-      className="relative text-white w-full px-6 py-12 h-auto gap-6 flex flex-col items-center md:py-36"
+      className="relative z-10 scale-[103%] text-white w-full px-6 py-12 h-auto gap-6 flex flex-col items-center md:py-36"
     >
       <div className="absolute w-full h-full top-0 left-0 bg-varianceCover bg-cover bg-center brightness-50 blur-sm"></div>
       <div className="relative w-full">

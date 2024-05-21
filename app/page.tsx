@@ -12,9 +12,9 @@ export default function Home() {
       <Header />
       <main className="flex flex-col grow items-center justify-between overflow-auto">
         <ReleaseSection />
-        <VideoSection />
+        <BandSection />
         <TourSection />
-        {/* <BandSection /> */}
+        <VideoSection />
         <ContactSection />
       </main>
       <Footer />
