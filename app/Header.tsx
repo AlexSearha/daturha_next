@@ -55,7 +55,7 @@ export default function Header() {
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
             Death Melodic Metal
           </h1>
-          <p className="text-2xl tracking-tight italic">
+          <p className="text-2xl tracking-tight italic text-center md:text-start">
             Life is a perpetual cycle of ends and beginnings...
           </p>
         </div>
