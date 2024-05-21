@@ -70,7 +70,7 @@ const dateFormat = (dateToConvert: string) => {
 
 export const datesTour = [
   {
-    placeName: "Menecy Metal Fest",
+    placeName: "Mennecy Metal Fest",
     address: "7 Av. de Villeroy",
     city: "Mennecy",
     zipcode: "91540",

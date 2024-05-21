@@ -13,7 +13,7 @@ export default function Header() {
   const isMobileSize = useScreenDetect()
 
   return (
-    <header className="flex flex-col justify-center items-center pt-6">
+    <header className="flex flex-col justify-center items-center py-6">
       <div
         id="navbar-menu"
         className="flex px-4 gap-8 justify-between items-center w-full md:max-w-7xl"
@@ -39,7 +39,7 @@ export default function Header() {
       </div>
       <div
         id="logo"
-        className="flex flex-col w-full items-center justify-evenly mb-6 gap-5 md:flex-row-reverse md:max-w-6xl"
+        className="flex flex-col w-full items-center justify-evenly my-20 gap-5 md:flex-row-reverse md:max-w-6xl"
       >
         <Image
           src={DaturaTypo}
@@ -50,12 +50,12 @@ export default function Header() {
         />
         <div
           id="header-title"
-          className="flex flex-col items-start md:w-2/5 md:items-end"
+          className="flex flex-col items-center md:w-2/5 md:items-end"
         >
-          <h1 className="text-5xl font-bold tracking-tight">
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
             Death Melodic Metal
           </h1>
-          <p className="text-3xl tracking-tight">
+          <p className="text-2xl tracking-tight">
             Pour les hommes qui aiment les hommes
           </p>
         </div>
