@@ -28,7 +28,10 @@ export default function ReleaseSection() {
   return (
     <section id="music">
       {/** bandcamp Players */}
-      <div id="bandcamp-player" className="flex flex-col gap-10 px-4 py-16">
+      <div
+        id="bandcamp-player"
+        className="flex flex-col gap-10 px-4 py-16 md:py-32"
+      >
         <h2 className="text-4xl font-bold text-center">RELEASES</h2>
         <div className="flex flex-col gap-8 md:flex-row md:gap-8">
           <div className="flex flex-col gap-2">

@@ -36,7 +36,7 @@ export default function TourSection() {
   return (
     <section
       id="tour"
-      className="w-full flex flex-col items-center px-4 py-16 md:max-w-5xl"
+      className="w-full flex flex-col items-center px-4 py-16 md:py-32 md:max-w-5xl"
     >
       <h2 className="text-4xl font-bold text-center mb-8">TOUR DATES</h2>
       {ShowDatesTour().length !== 0 ? (
