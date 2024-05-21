@@ -65,8 +65,8 @@ export function UnearthVideoIframe() {
 
   return (
     <iframe
-      width={isMobileView ? "385" : "800"}
-      height={isMobileView ? "216" : "450"}
+      width={isMobileView ? "366" : "800"}
+      height={isMobileView ? "205" : "450"}
       src="https://www.youtube.com/embed/uATRu9o3lwc?si=RooLwp5Cp_5AszZz"
       title="YouTube video player"
       // frameborder="0"
