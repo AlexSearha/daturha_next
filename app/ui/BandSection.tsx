@@ -8,7 +8,10 @@ import Image from "next/image"
 
 export default function BandSection() {
   return (
-    <section className="flex flex-wrap w-full md:flex-row z-0 text-white">
+    <section
+      id="band"
+      className="flex flex-wrap w-full md:flex-row z-0 text-white"
+    >
       <div className="relative h-auto w-1/2 md:w-1/4 border-black md:border-black/90 border-r-2">
         <Image src={MaxPhoto} alt="Max photo Singer" />
         <div className="absolute gap-4 flex-col top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center opacity-0 transition-all hover:opacity-100">

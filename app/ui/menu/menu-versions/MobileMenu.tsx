@@ -46,16 +46,16 @@ export default function MobileMenu() {
             </Link>
             <Link
               onClick={handleClose}
-              href="#tour"
-              className="transition hover:text-gray-400"
-            >
-              TOUR
-            </Link>
-            <Link
-              onClick={handleClose}
               href="#band"
               className="transition hover:text-gray-400"
             >
+              <Link
+                onClick={handleClose}
+                href="#tour"
+                className="transition hover:text-gray-400"
+              >
+                TOUR
+              </Link>
               BAND
             </Link>
             <Link
