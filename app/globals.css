@@ -25,4 +25,16 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  #text-variances {
+    background: -webkit-linear-gradient(120deg, #f4b45e, #e35150);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  #link-mennecy {
+    background: -webkit-linear-gradient(120deg, #1caaec, #ffe0a7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }

@@ -25,12 +25,6 @@ const config: Config = {
         textSecondary: "#D4964F",
         textHover: "#672013",
       },
-      gradientColorStops: {
-        startVariancesColor: "#f4b45e",
-        endVariancesColor: "#e35150",
-        startMennecyColor: "#1caaec",
-        endMennecyColor: "#ffe0a7",
-      },
     },
   },
   plugins: [],

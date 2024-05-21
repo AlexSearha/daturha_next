@@ -37,7 +37,7 @@ export default function MennecyVariance() {
             <div className="text-center">
               <h2 className="font-bold text-5xl">
                 GET PHYSICAL <br />
-                <span className="text-[4.5rem] bg-gradient-to-r from-startVariancesColor to-endVariancesColor inline-block text-transparent bg-clip-text">
+                <span id="text-variances" className="text-[4.5rem]">
                   VARIANCES
                 </span>
                 <br />
@@ -47,6 +47,7 @@ export default function MennecyVariance() {
                   className="text-5xl xl:text-7xl animate-pulse bg-gradient-to-r from-startMennecyColor to-endMennecyColor inline-block text-transparent bg-clip-text transition-all hover:animate-none"
                   href="https://www.fnactickets.com/ticket-evenement/hard-rock-metal-mennecy-metal-fest-man64884-lt.htm"
                   target="_blank"
+                  id="link-mennecy"
                 >
                   MENNECY METAL FEST
                 </Link>
