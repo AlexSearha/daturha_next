@@ -42,7 +42,7 @@ export default function MennecyVariance() {
                   className="text-[3.1rem] xl:text-[4.5rem]"
                 >
                   VARIANCES{" "}
-                  <span className="text-[1.8rem] xl:text-4xl">PART I</span>
+                  <span className="text-[1.6rem] xl:text-4xl">PART I</span>
                 </span>
                 <br />
                 <span className="text-4xl">ONLY AT</span>
