@@ -29,7 +29,7 @@ export default function MennecyVariance() {
                   layout="fill"
                   objectFit="contain"
                   alt="variance cover"
-                  className="animate-spin-slow z-10"
+                  className="animate-spin-slow z-30 brightness-50"
                 />
                 <div className="absolute z-0 top-[70px] left-[70px] w-[100px] h-[100px] bg-black xl:top-[125px] xl:left-[150px] xl:w-[200px] xl:h-[200px]"></div>
               </div>

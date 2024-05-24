@@ -43,7 +43,7 @@ export default function Header() {
       >
         <Image
           src={DaturaTypo}
-          className="drop-shadow-lg md:w-3/5"
+          className="md:w-3/5"
           alt="Daturha logo"
           height={700}
           width={700}
