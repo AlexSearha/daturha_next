@@ -37,8 +37,12 @@ export default function MennecyVariance() {
             <div className="text-center">
               <h2 className="font-bold text-5xl">
                 GET PHYSICAL <br />
-                <span id="text-variances" className="text-[4.5rem]">
-                  VARIANCES <span className="text-4xl">PART I</span>
+                <span
+                  id="text-variances"
+                  className="text-[3.1rem] xl:text-[4.5rem]"
+                >
+                  VARIANCES{" "}
+                  <span className="text-[1.8rem] xl:text-4xl">PART I</span>
                 </span>
                 <br />
                 <span className="text-4xl">ONLY AT</span>
