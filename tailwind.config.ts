@@ -21,7 +21,7 @@ const config: Config = {
       },
       colors: {
         background: "#F8F8F6",
-        text: "#191410",
+        text: "#0a0a0a",
         textSecondary: "#D4964F",
         textHover: "#672013",
       },
