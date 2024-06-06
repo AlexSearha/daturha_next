@@ -48,16 +48,10 @@ export default function Header() {
           height={700}
           width={700}
         />
-        <div
-          id="header-title"
-          className="flex flex-col items-center md:w-2/5 md:items-end"
-        >
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
-            Death Melodic Metal
-          </h1>
-          <p className="text-2xl tracking-tight italic text-center md:text-start">
+        <div id="header-title" className="w-full md:w-2/5 flex items-center">
+          <h1 className="text-3xl text-center md:text-4xl italic font-bold tracking-tight px-10 md:px-2">
             Life is a perpetual cycle of ends and beginnings...
-          </p>
+          </h1>
         </div>
       </div>
       <MennecyVariance />
