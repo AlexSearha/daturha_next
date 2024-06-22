@@ -3,7 +3,7 @@ import { oswald } from "./lib/font"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Daturha | Death Melodic Metal",
+  title: "Daturha | Death Metal Melodic",
   description: "Daturha is a Death Melodic Metal band from France.",
 }
 
