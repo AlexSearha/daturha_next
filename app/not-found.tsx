@@ -9,7 +9,8 @@ export default function NotFound() {
         className={`${oswald.className} bg-background text-text overflow-x-hidden flex flex-col min-h-screen`}
       >
         <div className="flex-grow flex flex-col gap-3 justify-center items-center">
-          <h1 className="text-4xl">Page non trouvée</h1>
+          <h1 className="text-4xl">ERREUR 404</h1>
+          <h2 className="text-3xl">Page non trouvée</h2>
           <p className="text-xl">
             La page que vous cherchez n&apos;existe pas{" "}
           </p>
