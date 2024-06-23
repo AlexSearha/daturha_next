@@ -1,10 +1,10 @@
-import Footer from "./Footer"
-import Header from "./Header"
-import BandSection from "./ui/BandSection"
-import ContactSection from "./ui/ContacSection"
-import ReleaseSection from "./ui/ReleaseSection"
-import TourSection from "./ui/TourSection"
-import VideoSection from "./ui/VideoSection"
+import Footer from "./Footer";
+import Header from "./Header";
+import BandSection from "./ui/BandSection";
+import ContactSection from "./ui/ContacSection";
+import ReleaseSection from "./ui/ReleaseSection";
+import TourSection from "./ui/TourSection";
+import VideoSection from "./ui/VideoSection";
 
 export default function Home() {
   return (
@@ -19,5 +19,5 @@ export default function Home() {
       </main>
       <Footer />
     </>
-  )
+  );
 }
