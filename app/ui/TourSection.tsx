@@ -1,6 +1,7 @@
-import React from "react"
-import { datesTour } from "../lib/dates"
-import Link from "next/link"
+import React from "react";
+import { datesTour } from "../lib/dates";
+import Link from "next/link";
+import { googleEventMeta } from "../seo/googleEventMeta";
 
 const ShowDatesTour = () => {
   return datesTour.map((liveEvent, key) => {
@@ -27,10 +28,14 @@ const ShowDatesTour = () => {
             GET TICKETS
           </Link>
         </button>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(googleEventMeta) }}
+        />
       </div>
-    )
-  })
-}
+    );
+  });
+};
 
 export default function TourSection() {
   return (
@@ -45,5 +50,5 @@ export default function TourSection() {
         <p>No events for the moment !</p>
       )}
     </section>
-  )
+  );
 }
