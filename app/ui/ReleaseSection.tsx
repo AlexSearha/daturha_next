@@ -1,20 +1,20 @@
-import React from "react"
-import dynamic from "next/dynamic"
-import Link from "next/link"
+import React from "react";
+import dynamic from "next/dynamic";
+import Link from "next/link";
 
 const VarianceIframeComponent = dynamic(
   () => import("../ui/iframes/Iframes").then((mod) => mod.VariancesIframe),
   {
     ssr: false,
   }
-)
+);
 
 const CycleIframeComponent = dynamic(
   () => import("../ui/iframes/Iframes").then((mod) => mod.CycleIframe),
   {
     ssr: false,
   }
-)
+);
 
 const BeyondTheReasonComponent = dynamic(
   () =>
@@ -22,7 +22,7 @@ const BeyondTheReasonComponent = dynamic(
   {
     ssr: false,
   }
-)
+);
 
 export default function ReleaseSection() {
   return (
@@ -47,7 +47,7 @@ export default function ReleaseSection() {
           <div className="flex flex-col gap-2">
             <CycleIframeComponent />
             <Link
-              href="https://shop.season-of-mist.com/daturha-cycle-cd-digipak"
+              href="https://daturha.bandcamp.com/album/cycle"
               target="_blank"
               className="text-center p-2 font-bold border-2 transition-colors border-black hover:text-white hover:bg-text"
             >
@@ -67,5 +67,5 @@ export default function ReleaseSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
