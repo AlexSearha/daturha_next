@@ -29,6 +29,7 @@ const BeyondTheReasonComponent = dynamic(
 export default function ReleaseSection() {
   return (
     <motion.section
+      id="music"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 2 }}
