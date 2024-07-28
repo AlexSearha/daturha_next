@@ -1,10 +1,16 @@
-import React from "react"
+"use client";
+import React from "react";
+import { motion } from "framer-motion";
 
 export default function ContactSection() {
   return (
-    <section
+    <motion.section
       id="contact"
       className="flex flex-col w-full gap-10 px-4 py-16 md:py-32 md:max-w-5xl"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 2 }}
+      viewport={{ once: true }}
     >
       <h2 className="text-4xl font-bold text-center">CONTACT</h2>
       <div
@@ -30,6 +36,6 @@ export default function ContactSection() {
           </a>
         </div>
       </div>
-    </section>
-  )
+    </motion.section>
+  );
 }

@@ -1,7 +1,8 @@
+"use client";
 import React from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
-import { googleProductMeta } from "../seo/googleProductMeta";
+import { motion } from "framer-motion";
 
 const VarianceIframeComponent = dynamic(
   () => import("../ui/iframes/Iframes").then((mod) => mod.VariancesIframe),
@@ -27,14 +28,12 @@ const BeyondTheReasonComponent = dynamic(
 
 export default function ReleaseSection() {
   return (
-    <section id="music">
-      {googleProductMeta.map((product, index) => (
-        <script
-          key={index}
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(product) }}
-        />
-      ))}
+    <motion.section
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 2 }}
+      viewport={{ once: true }}
+    >
       {/** bandcamp Players */}
       <div
         id="bandcamp-player"
@@ -74,6 +73,6 @@ export default function ReleaseSection() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

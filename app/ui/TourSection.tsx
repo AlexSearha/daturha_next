@@ -1,7 +1,9 @@
+"use client";
 import React from "react";
 import { datesTour } from "../lib/dates";
 import Link from "next/link";
 import { googleEventMeta } from "../seo/googleEventMeta";
+import { motion } from "framer-motion";
 
 const ShowDatesTour = () => {
   return datesTour.map((liveEvent, key) => {
@@ -39,9 +41,13 @@ const ShowDatesTour = () => {
 
 export default function TourSection() {
   return (
-    <section
-      id="tour"
+    <motion.section
       className="w-full flex flex-col items-center px-4 py-16 md:py-32 md:max-w-5xl"
+      id="tour"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 2 }}
+      viewport={{ once: true }}
     >
       <h2 className="text-4xl font-bold text-center mb-8">TOUR DATES</h2>
       {ShowDatesTour().length !== 0 ? (
@@ -49,6 +55,6 @@ export default function TourSection() {
       ) : (
         <p>No events for the moment !</p>
       )}
-    </section>
+    </motion.section>
   );
 }

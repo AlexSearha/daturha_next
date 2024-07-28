@@ -1,16 +1,17 @@
-"use client"
-import DaturhaLogo from "@/public/daturhaLogo2020.png"
-import DaturaTypo from "@/public/datlog01.png"
-import NavMenu from "./ui/menu/NavMenu"
-import Link from "next/link"
-import { usePathname } from "next/navigation"
-import MennecyVariance from "./ui/MennecyVariance"
-import Image from "next/image"
-import useScreenDetect from "./hooks/screenDetect"
+"use client";
+import DaturhaLogo from "@/public/daturhaLogo2020.png";
+import DaturaTypo from "@/public/datlog01.png";
+import NavMenu from "./ui/menu/NavMenu";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import MennecyVariance from "./ui/MennecyVariance";
+import Image from "next/image";
+import useScreenDetect from "./hooks/screenDetect";
+import { motion } from "framer-motion";
 
 export default function Header() {
-  const pathname = usePathname()
-  const isMobileSize = useScreenDetect()
+  const pathname = usePathname();
+  const isMobileSize = useScreenDetect();
 
   return (
     <header className="flex flex-col justify-center items-center py-6">
@@ -37,9 +38,12 @@ export default function Header() {
         </Link>
         <NavMenu />
       </div>
-      <div
+      <motion.div
         id="logo"
         className="flex flex-col w-full items-center justify-evenly my-20 gap-5 md:flex-row-reverse md:max-w-6xl"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 2 }}
       >
         <Image
           src={DaturaTypo}
@@ -53,8 +57,8 @@ export default function Header() {
             Life is a perpetual cycle of ends and beginnings...
           </h1>
         </div>
-      </div>
+      </motion.div>
       <MennecyVariance />
     </header>
-  )
+  );
 }
