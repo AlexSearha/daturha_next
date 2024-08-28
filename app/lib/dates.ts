@@ -1,4 +1,4 @@
-import moment from "moment"
+import moment from "moment";
 moment.locale("fr", {
   months:
     "janvier_février_mars_avril_mai_juin_juillet_août_septembre_octobre_novembre_décembre".split(
@@ -44,11 +44,11 @@ moment.locale("fr", {
   },
   dayOfMonthOrdinalParse: /\d{1,2}(er|e)/,
   ordinal: function (number) {
-    return number + (number === 1 ? "er" : "e")
+    return number + (number === 1 ? "er" : "e");
   },
   meridiemParse: /PD|MD/,
   isPM: function (input) {
-    return input.charAt(0) === "M"
+    return input.charAt(0) === "M";
   },
   // In case the meridiem units are not separated around 12, then implement
   // this function (look at locale/id.js for an example).
@@ -56,17 +56,17 @@ moment.locale("fr", {
   //     return /* 0-23 hour, given meridiem token and hour 1-12 */ ;
   // },
   meridiem: function (hours, minutes, isLower) {
-    return hours < 12 ? "PD" : "MD"
+    return hours < 12 ? "PD" : "MD";
   },
   week: {
     dow: 1, // Monday is the first day of the week.
     doy: 4, // Used to determine first week of the year.
   },
-})
+});
 
 const dateFormat = (dateToConvert: string) => {
-  return moment(dateToConvert).format("ddd DD MMM YYYY")
-}
+  return moment(dateToConvert).format("ddd DD MMM YYYY à HH:mm ");
+};
 
 export const datesTour = [
   {
@@ -74,8 +74,8 @@ export const datesTour = [
     address: "7 Av. de Villeroy",
     city: "Mennecy",
     zipcode: "91540",
-    date: dateFormat("2024-09-07"),
+    date: dateFormat("2024-09-07T15:00:00+02:00"),
     ticketWebsite:
       "https://www.fnactickets.com/ticket-evenement/mennecy-metal-fest-fst24mmf-lt.htm",
   },
-]
+];
