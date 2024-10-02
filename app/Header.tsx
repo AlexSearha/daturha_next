@@ -58,7 +58,7 @@ export default function Header() {
           </h1>
         </div>
       </motion.div>
-      <MennecyVariance />
+      {/* <MennecyVariance /> */}
     </header>
   );
 }

@@ -3,6 +3,7 @@ import React from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import ButtonGeneric from "../components/ButtonGeneric";
 
 const VarianceIframeComponent = dynamic(
   () => import("../ui/iframes/Iframes").then((mod) => mod.VariancesIframe),
@@ -44,33 +45,27 @@ export default function ReleaseSection() {
         <div className="flex flex-col gap-8 md:flex-row md:gap-8">
           <div className="flex flex-col gap-2">
             <VarianceIframeComponent />
-            <Link
+            <ButtonGeneric
               href="https://daturha.bandcamp.com/album/variances-part-i"
               target="_blank"
-              className="text-center p-2 font-bold border-2 transition-colors border-black hover:text-white hover:bg-text"
-            >
-              GET &quot;VARIANCES&quot; NOW
-            </Link>
+              title='GET "VARIANCE" NOW'
+            />
           </div>
           <div className="flex flex-col gap-2">
             <CycleIframeComponent />
-            <Link
+            <ButtonGeneric
               href="https://daturha.bandcamp.com/album/cycle"
               target="_blank"
-              className="text-center p-2 font-bold border-2 transition-colors border-black hover:text-white hover:bg-text"
-            >
-              GET &quot;CYCLE&quot; NOW
-            </Link>
+              title='GET "CYCLE" NOW'
+            />
           </div>
           <div className="flex flex-col gap-2">
             <BeyondTheReasonComponent />
-            <Link
+            <ButtonGeneric
               href="https://daturha.bandcamp.com/album/beyond-the-reason"
               target="_blank"
-              className="text-center p-2 font-bold border-2 transition-colors border-black hover:text-white hover:bg-text"
-            >
-              GET &quot;BEYOND THE REASON&quot; NOW
-            </Link>
+              title='GET "BEYOND THE REASON" NOW'
+            />
           </div>
         </div>
       </div>
