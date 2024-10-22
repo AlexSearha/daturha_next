@@ -4,7 +4,6 @@ import DaturaTypo from "@/public/datlog01.png";
 import NavMenu from "./ui/menu/NavMenu";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import MennecyVariance from "./ui/MennecyVariance";
 import Image from "next/image";
 import useScreenDetect from "./hooks/screenDetect";
 import { motion } from "framer-motion";
@@ -20,21 +19,22 @@ export default function Header() {
         className="flex px-4 gap-8 justify-between items-center w-full md:max-w-7xl"
       >
         <Link href={pathname}>
-          {isMobileSize ? (
-            <Image
-              src={DaturhaLogo}
-              alt="Daturha logo"
-              height={70}
-              width={70}
-            />
-          ) : (
-            <Image
-              src={DaturhaLogo}
-              alt="Daturha logo"
-              height={100}
-              width={100}
-            />
-          )}
+          {isMobileSize !== undefined &&
+            (isMobileSize ? (
+              <Image
+                src={DaturhaLogo}
+                alt="Daturha logo"
+                height={70}
+                width={70}
+              />
+            ) : (
+              <Image
+                src={DaturhaLogo}
+                alt="Daturha logo"
+                height={100}
+                width={100}
+              />
+            ))}
         </Link>
         <NavMenu />
       </div>

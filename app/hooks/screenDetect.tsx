@@ -1,21 +1,21 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
 
 export default function useScreenDetect() {
-  const [screenSize, setScreenSize] = useState(false)
+  const [screenSize, setScreenSize] = useState<undefined | boolean>(undefined);
 
   useEffect(() => {
     const handleResize = () => {
-      setScreenSize(window.innerWidth < 768)
-    }
+      setScreenSize(window.innerWidth < 768);
+    };
 
-    window.addEventListener("resize", handleResize)
+    // Détection de la taille d'écran uniquement après le montage du composant
+    handleResize();
 
-    handleResize()
-
+    window.addEventListener("resize", handleResize);
     return () => {
-      window.removeEventListener("resize", handleResize)
-    }
-  }, [])
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
-  return screenSize
+  return screenSize;
 }
