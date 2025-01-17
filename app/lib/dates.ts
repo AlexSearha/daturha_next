@@ -70,12 +70,12 @@ const dateFormat = (dateToConvert: string) => {
 
 export const datesTour = [
   {
-    placeName: "Mennecy Metal Fest",
-    address: "7 Av. de Villeroy",
-    city: "Mennecy",
-    zipcode: "91540",
-    date: dateFormat("2024-09-07T15:00:00+02:00"),
+    placeName: "L'usine à chapeaux",
+    address: "6 Rue Dubuc",
+    city: "Rambouillet",
+    zipcode: "78120",
+    date: dateFormat("2025-01-25T19:00:00+02:00"),
     ticketWebsite:
-      "https://www.fnactickets.com/ticket-evenement/mennecy-metal-fest-fst24mmf-lt.htm",
+      "https://www.usineachapeaux.fr/concert/scene-decouvertes-locales-5/",
   },
 ];
