@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { datesTour } from "../lib/dates";
+import { dateFormat, datesTour } from "../lib/dates";
 import Link from "next/link";
 import { googleEventMeta } from "../seo/googleEventMeta";
 import { motion } from "framer-motion";
@@ -9,10 +9,10 @@ import ButtonGeneric from "../components/ButtonGeneric";
 
 const ShowDatesTour = () => {
   return datesTour.map((liveEvent, key) => {
-    const liveDate = moment(liveEvent.date).format("YYYY-MM-DD");
-    const nowDate = moment().format("YYYY-MM-DD");
+    const liveDate = moment(liveEvent.date);
+    const nowDate = moment();
 
-    if (liveDate < nowDate) {
+    if (liveDate.isAfter(nowDate)) {
       return (
         <div
           key={key}
@@ -24,7 +24,7 @@ const ShowDatesTour = () => {
             <h2 className="text-2xl font-bold text-slate-600">
               {liveEvent.placeName}
             </h2>
-            <p className="uppercase">{liveEvent.date}</p>
+            <p className="uppercase">{dateFormat(liveEvent.date)}</p>
             <p className="italic">{`${liveEvent.address}, ${liveEvent.zipcode} ${liveEvent.city}`}</p>
           </div>
           <ButtonGeneric

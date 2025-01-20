@@ -64,7 +64,7 @@ moment.locale("fr", {
   },
 });
 
-const dateFormat = (dateToConvert: string) => {
+export const dateFormat = (dateToConvert: string) => {
   return moment(dateToConvert).format("ddd DD MMM YYYY à HH:mm ");
 };
 
@@ -74,7 +74,7 @@ export const datesTour = [
     address: "6 Rue Dubuc",
     city: "Rambouillet",
     zipcode: "78120",
-    date: dateFormat("2025-01-25T19:00:00+02:00"),
+    date: "2025-01-25 20:30:00",
     ticketWebsite:
       "https://www.usineachapeaux.fr/concert/scene-decouvertes-locales-5/",
   },
