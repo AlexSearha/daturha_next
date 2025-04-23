@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr">
+    <html lang="fr" className="scroll-smooth">
       <body
         className={`${oswald.className} bg-background text-text overflow-x-hidden flex flex-col min-h-screen`}
       >
